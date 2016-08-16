@@ -137,32 +137,32 @@
   $icoMic.click(function(){
     hideAll();
   	$txtmic.fadeIn();
-    $backgd.css('background-image', 'url(images/bmic.png)');
+    $backgd.css('background-image', 'url(images/bmic.jpg)');
   });
 
 
   $icoType.click(function(){
     hideAll();
   	$txtType.fadeIn();
-    $backgd.css('background-image', 'url(images/btype.png)');
+    $backgd.css('background-image', 'url(images/btype.jpg)');
   });
 
   $icoApi.click(function(){
     hideAll();
   	$txtApi.fadeIn();
-    $backgd.css('background-image', 'url(images/bapi.png)');
+    $backgd.css('background-image', 'url(images/bapi.jpg)');
   });
 
   $icoLearn.click(function(){
     hideAll();
   	$txtLearn.fadeIn();
-    $backgd.css('background-image', 'url(images/blearn.png)');
+    $backgd.css('background-image', 'url(images/blearn.jpg)');
   });
 
   $icoSpeak.click(function(){
     hideAll();
   	$txtSpeak.fadeIn();
-    $backgd.css('background-image', 'url(images/bspeak.png)');
+    $backgd.css('background-image', 'url(images/bspeak.jpg)');
   });
 
 
@@ -211,12 +211,8 @@
       $contentheader.css('top', '642px');
     }
     
-    console.log(top);
-    
     if(top > 495)
-      $topicDisplay.text("Domain, What is Lire");
-    if(top > 796)
-      $topicDisplay.text("Domain, What is Lire, Features");
+      changeSubTopic(top, "Domain");
     
   });
 
@@ -224,4 +220,17 @@
   	//console.log($(this).height());
     $background.height($(window).height());
   });
+
+
+function changeSubTopic(top, topic){
+    $('#content').find('.subtopic').each(function(){
+      var ele = $(this).offset().top;
+      if((ele - top)<500 && (ele - top)>0){
+        var subtopic = $(this).text();
+        $topicDisplay.text(topic+", "+subtopic);
+      }
+    });
+}
+
+
 })();
