@@ -2,7 +2,11 @@
   var $background = $('.js-background');
   var $backgd = $('.js-backgd');
   var $features = $('.js-features');
+  var $objectiveAnchor = $('.js-objective-anchor');
+  var $problemAnchor = $('.js-problem-anchor');
   var $featuresAnchor = $('.js-features-anchor');
+  var $researchgapAnchor = $('.js-researchgap-anchor');
+  var $litAnchor = $('.js-lit-anchor');
   var $topic = $('.js-topic');
   var $content = $('.js-content');
   var $lireLogo = $('.js-lire-logo');
@@ -36,6 +40,33 @@
   $content.hide();
   $contentheader.hide();
   $homenavcontent2.hide();
+
+  $backgd.click(function(){
+  	$domainsub.slideUp();
+  });
+
+  $background.click(function(){
+  	$domainsub.slideUp();
+  });
+
+  $content.click(function(){
+  	$domainsub.slideUp();
+  });
+
+  //smooth scroll to anchors
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+
 
   hideAll();  
   demo();
@@ -140,6 +171,7 @@
     $content.fadeIn();
     $contentheader.fadeIn();
     $("html, body").animate({ scrollTop: 750 }, "slow");
+    $domainsub.slideDown();
   });
 
 
