@@ -18,19 +18,20 @@
   var $txtLearn = $('.js-txt-learn');
   var $txtApi = $('.js-txt-api');
   var $lireLogo = $('.js-lire-logo');
-  var $domainsub = $('.js-domainsub');
-  var $homenavcontent2 = $('.js-homenavcontent2');
   var $features = $('.js-features');
+  var $sidedecor = $('.js-sidedecor');
+  var $milestonesAnchor = $('.js-milestones-anchor');
   var $objectiveAnchor = $('.js-objective-anchor');
   var $problemAnchor = $('.js-problem-anchor');
-  var $featuresAnchor = $('.js-features-anchor');
   var $researchgapAnchor = $('.js-researchgap-anchor');
   var $litAnchor = $('.js-lit-anchor');
+  var $featuresAnchor = $('.js-features-anchor');
   var $topic = $('.js-topic');
-  var $sidedecor = $('.js-sidedecor');
   var $content = $('.js-content');
   var $topicDisplay = $('.js-topic-display');
   var $contentheader = $('.js-contentheader');
+  var $domainsub = $('.js-domainsub');
+  var $homenavcontent2 = $('.js-homenavcontent2');
 
 
   //initialize demo counter
@@ -211,6 +212,15 @@
   	$domainsub.slideUp();
   });
 
+  $btnMilestones.click(function(){
+    $content.fadeIn();
+    $contentheader.fadeIn();
+    var etop = $milestonesAnchor.offset().top;
+    var wtop = $(document).scrollTop();
+    
+    $("html, body").animate({ scrollTop: (etop - wtop) }, "slow");
+    
+  });
 
 
 
