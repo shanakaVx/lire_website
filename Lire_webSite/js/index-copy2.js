@@ -1,18 +1,6 @@
 (function() {
   var $background = $('.js-background');
   var $backgd = $('.js-backgd');
-  var $features = $('.js-features');
-  var $objectiveAnchor = $('.js-objective-anchor');
-  var $problemAnchor = $('.js-problem-anchor');
-  var $featuresAnchor = $('.js-features-anchor');
-  var $researchgapAnchor = $('.js-researchgap-anchor');
-  var $litAnchor = $('.js-lit-anchor');
-  var $topic = $('.js-topic');
-  var $sidedecor = $('.js-sidedecor');
-  var $content = $('.js-content');
-  var $lireLogo = $('.js-lire-logo');
-  var $topicDisplay = $('.js-topic-display');
-  var $contentheader = $('.js-contentheader');
   var $btnContacts = $('.js-btn-contacts');
   var $btnAbout = $('.js-btn-about');
   var $btnDomain = $('.js-btn-domain');
@@ -29,8 +17,20 @@
   var $txtSpeak = $('.js-txt-speak');
   var $txtLearn = $('.js-txt-learn');
   var $txtApi = $('.js-txt-api');
+  var $lireLogo = $('.js-lire-logo');
   var $domainsub = $('.js-domainsub');
   var $homenavcontent2 = $('.js-homenavcontent2');
+  var $features = $('.js-features');
+  var $objectiveAnchor = $('.js-objective-anchor');
+  var $problemAnchor = $('.js-problem-anchor');
+  var $featuresAnchor = $('.js-features-anchor');
+  var $researchgapAnchor = $('.js-researchgap-anchor');
+  var $litAnchor = $('.js-lit-anchor');
+  var $topic = $('.js-topic');
+  var $sidedecor = $('.js-sidedecor');
+  var $content = $('.js-content');
+  var $topicDisplay = $('.js-topic-display');
+  var $contentheader = $('.js-contentheader');
 
 
   //initialize demo counter
@@ -39,7 +39,9 @@
   //initialize background element sizes
   $background.height($(window).height());
   $backgd.height($(window).height());
+  $domainsub.hide();
   $content.css('top', $(window).height()+"px");
+  //$contentheader.css('top', $(window).height()+"px");
 
   //initialze back ground images
   $backgd.css('background-image', 'url(images/bmic.jpg)');
@@ -82,7 +84,7 @@
 
 
   hideAll();  
-  demo();
+  //demo();
     
   function demo(){
     valCounter++;
@@ -196,8 +198,17 @@
   $btnDomain.click(function(){
     $content.fadeIn();
     $contentheader.fadeIn();
-    $("html, body").animate({ scrollTop: 750 }, "slow");
+    var sctop = $(window).height() + 40;
+    $("html, body").animate({ scrollTop: sctop }, "slow");
+  });
+
+  $btnDomain.hover(function(){
+  	//$domainsub.css('height', '241px');
     $domainsub.slideDown();
+  });
+
+  $domainsub.mouseleave(function(){
+  	$domainsub.slideUp();
   });
 
 
@@ -215,7 +226,6 @@
   //events bound to window scroll
 
   $( window ).scroll(function() {
-    //console.log($(document).scrollTop());
     var top = $(document).scrollTop();
     
     if(top > 500){
@@ -232,12 +242,16 @@
       $contentheader.slideUp();
     }
     
-    if(top > 639){
+    var ctop = $content.offset().top;
+    console.log(top+" - "+ctop);
+    console.log("windowH - "+$(window).height());
+    
+    if((ctop - top) <= 0){
       $contentheader.css('position', 'fixed');
       $contentheader.css('top', '0px');
     } else {
       $contentheader.css('position', 'absolute');
-      $contentheader.css('top', '642px');
+      $contentheader.css('top', ctop+"px");
     }
     
     //call topic changer
@@ -249,8 +263,11 @@
 
   //events bound to window resize
   $(window).resize(function(){
+    
     $background.height($(window).height());
     $backgd.height($(window).height());
+    $content.css('top', $(window).height()+"px");
+    $contentheader.css('top', $(window).height()+"px");
   });
 
 
