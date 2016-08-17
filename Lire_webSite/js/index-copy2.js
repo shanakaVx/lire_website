@@ -8,6 +8,7 @@
   var $researchgapAnchor = $('.js-researchgap-anchor');
   var $litAnchor = $('.js-lit-anchor');
   var $topic = $('.js-topic');
+  var $sidedecor = $('.js-sidedecor');
   var $content = $('.js-content');
   var $lireLogo = $('.js-lire-logo');
   var $topicDisplay = $('.js-topic-display');
@@ -32,15 +33,27 @@
   var $homenavcontent2 = $('.js-homenavcontent2');
 
 
-  //initialize
+  //initialize demo counter
   var valCounter = 0;
-  $backgd.css('background-image', 'url(images/bmic.png)');
-  $backgd.css('mix-blend-mode', 'soft-light');
+
+  //initialize background element sizes
   $background.height($(window).height());
+  $backgd.height($(window).height());
+  $content.css('top', $(window).height()+"px");
+
+  //initialze back ground images
+  $backgd.css('background-image', 'url(images/bmic.jpg)');
+  $sidedecor.css('background-image', 'url(images/bmic.jpg)');
+  $contentheader.css('background-image', 'url(images/bmic.jpg)');
+
+  //$backgd.css('mix-blend-mode', 'soft-light');
+
+  //initialize element stylings
   $content.hide();
   $contentheader.hide();
   $homenavcontent2.hide();
 
+  //sub menus
   $backgd.click(function(){
   	$domainsub.slideUp();
   });
@@ -81,15 +94,17 @@
     	$icoSpeak.trigger("click");
     else if(valCounter === 4)
     	$icoLearn.trigger("click");
-    else if(valCounter === 5)
+    else if(valCounter === 5){
+      //valCounter = 0;
     	$icoApi.trigger("click");
+    }
     else
-    	return;
-    setTimeout(demo, 3000);
+      return;
+    setTimeout(demo, 5000);
   }
     
     
-
+  //mouse hover
 
   $icoMic.mouseenter(function(){
   	$(this).css('transform', 'rotate(360deg)');	
@@ -133,11 +148,14 @@
 
 
 
+  //click events
 
   $icoMic.click(function(){
     hideAll();
   	$txtmic.fadeIn();
     $backgd.css('background-image', 'url(images/bmic.jpg)');
+    $sidedecor.css('background-image', 'url(images/bmic.jpg)');
+    $contentheader.css('background-image', 'url(images/bmic.jpg)');
   });
 
 
@@ -145,24 +163,32 @@
     hideAll();
   	$txtType.fadeIn();
     $backgd.css('background-image', 'url(images/btype.jpg)');
+    $sidedecor.css('background-image', 'url(images/btype.jpg)');
+    $contentheader.css('background-image', 'url(images/btype.jpg)');
   });
 
   $icoApi.click(function(){
     hideAll();
   	$txtApi.fadeIn();
     $backgd.css('background-image', 'url(images/bapi.jpg)');
+    $sidedecor.css('background-image', 'url(images/bapi.jpg)');
+    $contentheader.css('background-image', 'url(images/bapi.jpg)');
   });
 
   $icoLearn.click(function(){
     hideAll();
   	$txtLearn.fadeIn();
     $backgd.css('background-image', 'url(images/blearn.jpg)');
+    $sidedecor.css('background-image', 'url(images/blearn.jpg)');
+    $contentheader.css('background-image', 'url(images/blearn.jpg)');
   });
 
   $icoSpeak.click(function(){
     hideAll();
   	$txtSpeak.fadeIn();
     $backgd.css('background-image', 'url(images/bspeak.jpg)');
+    $sidedecor.css('background-image', 'url(images/bspeak.jpg)');
+    $contentheader.css('background-image', 'url(images/bspeak.jpg)');
   });
 
 
@@ -184,6 +210,9 @@
     $txtType.hide();
     $txtmic.hide();
   }
+
+
+  //events bound to window scroll
 
   $( window ).scroll(function() {
     //console.log($(document).scrollTop());
@@ -211,26 +240,27 @@
       $contentheader.css('top', '642px');
     }
     
+    //call topic changer
     if(top > 495)
       changeSubTopic(top, "Domain");
-    
+      
   });
 
+
+  //events bound to window resize
   $(window).resize(function(){
-  	//console.log($(this).height());
     $background.height($(window).height());
+    $backgd.height($(window).height());
   });
 
 
-function changeSubTopic(top, topic){
-    $('#content').find('.subtopic').each(function(){
-      var ele = $(this).offset().top;
-      if((ele - top)<500 && (ele - top)>0){
-        var subtopic = $(this).text();
-        $topicDisplay.text(topic+", "+subtopic);
-      }
-    });
-}
-
-
+  function changeSubTopic(top, topic){
+      $('#content').find('.subtopic').each(function(){
+        var ele = $(this).offset().top;
+        if((ele - top)<500 && (ele - top)>0){
+          var subtopic = $(this).text();
+          $topicDisplay.text(topic+", "+subtopic);
+        }
+      });
+  }
 })();
