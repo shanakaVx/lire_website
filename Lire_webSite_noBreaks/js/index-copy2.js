@@ -18,8 +18,12 @@
   var $txtLearn = $('.js-txt-learn');
   var $txtApi = $('.js-txt-api');
   var $lireLogo = $('.js-lire-logo');
-  var $features = $('.js-features');
+  var $face = $('.js-face');
+  var $faceInfo = $('.js-face-info');
+  var $profile = $('.js-profile');
   var $sidedecor = $('.js-sidedecor');
+  var $documentsAnchor = $('.js-documents-anchor');
+  var $features = $('.js-features');
   var $milestonesAnchor = $('.js-milestones-anchor');
   var $objectiveAnchor = $('.js-objective-anchor');
   var $problemAnchor = $('.js-problem-anchor');
