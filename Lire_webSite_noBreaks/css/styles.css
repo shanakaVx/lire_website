@@ -13,6 +13,7 @@ body {
 .text-18 p,
 .text-21 p,
 .text-24 p,
+.text-27 p,
 .text-4 p,
 .text-6 p,
 .text-8 p {
@@ -70,9 +71,9 @@ body {
   position: absolute;
   top: 642px;
   left: 15.0073206442%;
-  z-index: 58;
+  z-index: 62;
   width: 73.6456808199%;
-  height: 5068px;
+  height: 5502px;
   background-color: rgb(255, 255, 255);
 }
 
@@ -80,7 +81,7 @@ body {
   position: absolute;
   top: 642px;
   left: 15.0073206442%;
-  z-index: 61;
+  z-index: 65;
   width: 73.6456808199%;
   height: 91px;
   background-image: url('../images/btype.jpg'), none;
@@ -95,7 +96,7 @@ body {
 
 .contentheader .lirelogo {
   top: 5px;
-  z-index: 59;
+  z-index: 63;
   width: 83px;
 }
 
@@ -114,7 +115,7 @@ body {
   position: absolute;
   top: 17px;
   left: 14.9513473053%;
-  z-index: 67;
+  z-index: 71;
   width: 89.2215568862%;
   height: 241px;
   -webkit-transition: all .5s;
@@ -128,7 +129,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 66;
+  z-index: 70;
   width: 100%;
   height: 228px;
   padding-top: 47px;
@@ -204,7 +205,7 @@ body {
   position: fixed;
   top: 8px;
   right: 84.9915355051%;
-  z-index: 69;
+  z-index: 73;
   width: 167px;
   height: 324px;
   -webkit-transition: width .3s;
@@ -549,6 +550,11 @@ body {
   margin-left: 21.96664%;
 }
 
+.element-4 {
+  z-index: 61;
+  margin-left: 21.8253%;
+}
+
 .lirelogo-2 {
   top: 71px;
   z-index: 23;
@@ -742,6 +748,61 @@ body {
   color: rgb(0, 42, 68);
 }
 
+.text-25 {
+  position: relative;
+  float: right;
+  clear: both;
+  z-index: 60;
+  width: 124px;
+  height: 39px;
+  margin-top: -47px;
+  margin-right: 76.73956%;
+  padding-right: 8px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  border-bottom-width: 3px;
+  border-bottom-color: rgb(0, 73, 119);
+  border-bottom-style: solid;
+  font-style: italic;
+  font-size: 1.125em;
+  text-align: right;
+  color: rgba(0, 73, 119, 0.92);
+}
+
+.text-26 {
+  float: left;
+  clear: both;
+  width: 70.8530069582%;
+  min-height: 38px;
+  margin-left: 22.99795%;
+  padding-left: 10px;
+  border-bottom-width: 1px;
+  border-left-width: 4px;
+  border-bottom-color: rgba(0, 73, 119, 0.14);
+  border-left-color: rgb(0, 73, 119);
+  border-bottom-style: solid;
+  border-left-style: solid;
+  font-style: italic;
+  font-size: 1.5em;
+  color: rgba(0, 73, 119, 0.92);
+}
+
+.text-27 {
+  float: left;
+  clear: both;
+  width: 74.072750994%;
+  min-height: 245px;
+  margin-left: 22.99795%;
+  padding-top: 40px;
+  padding-bottom: 120px;
+  padding-left: 20px;
+  border-left-width: 4px;
+  border-left-color: rgb(0, 73, 119);
+  border-left-style: solid;
+  font-size: 1em;
+  color: rgb(0, 42, 68);
+}
+
 .text-3 {
   position: relative;
   float: left;
@@ -872,7 +933,7 @@ body {
 .homenavcontent2 ._button-1 {
   top: 7px;
   left: 34.7305389221%;
-  z-index: 68;
+  z-index: 72;
   width: 59.2814371257%;
   padding-right: 9px;
   background-color: rgba(25, 19, 24, 0);
@@ -886,7 +947,7 @@ body {
 .homenavcontent2 ._button-2 {
   top: 69px;
   left: 24.5508982035%;
-  z-index: 65;
+  z-index: 69;
   width: 69.4610778443%;
   padding-right: 9px;
   background-color: rgba(25, 19, 24, 0);
@@ -895,7 +956,7 @@ body {
 .homenavcontent2 ._button-3 {
   top: 132px;
   left: 20.9580838323%;
-  z-index: 64;
+  z-index: 68;
   width: 73.0538922155%;
   background-color: rgba(25, 19, 24, 0);
 }
@@ -903,7 +964,7 @@ body {
 .homenavcontent2 ._button-4 {
   top: 194px;
   left: 43.113772455%;
-  z-index: 63;
+  z-index: 67;
   width: 50.8982035928%;
 }
 
@@ -915,7 +976,7 @@ body {
 .homenavcontent2 ._button-5 {
   top: 256px;
   left: 31.7365269461%;
-  z-index: 62;
+  z-index: 66;
   width: 62.5%;
 }
 
@@ -993,386 +1054,12 @@ body {
   white-space: normal;
 }
 
-@media(max-width: 800px) {
-  body {
-    font-size: 1em;
-  }
-
-  .background {
-    left: 0;
-    right: 0;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .content {
-    top: 752px;
-    left: 22.375%;
-    width: 77.625%;
-    height: 4152px;
-  }
-
-  .content .anchors {
-    width: 79.0282809983%;
-  }
-
-  .content .element {
-    position: relative;
-  }
-
-  .content .sidedecor {
-    position: relative;
-  }
-
-  .contentheader {
-    top: 752px;
-    left: 22.375%;
-    width: 77.625%;
-  }
-
-  .contentheader .text {
-    position: relative;
-    z-index: 60;
-    margin-left: 0.74477%;
-  }
-
-  .domainsub .text {
-    top: -1px;
-    left: 0.3770372172%;
-    width: 125.08%;
-    height: 269px;
-  }
-
-  .homeicocontent {
-    top: 303px;
-    left: 0;
-    right: 0;
-    width: 12.5%;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .homeicocontent .icoapi,
-  .homeicocontent .icolearn {
-    width: 58px;
-    height: auto;
-  }
-
-  .homeicocontent .icomic,
-  .homeicocontent .icospeak,
-  .homeicocontent .icotype {
-    height: auto;
-  }
-
-  .homenavcontent {
-    top: 538px;
-    left: 0;
-    right: 0;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .homenavcontent .sep1 {
-    position: absolute;
-    float: none;
-    top: 5px;
-    left: 172.0238095238%;
-    margin-top: 0;
-    margin-left: 0;
-  }
-
-  .homenavcontent .sep2 {
-    position: absolute;
-    float: none;
-    top: 5px;
-    left: -2.9761904762%;
-    margin-top: 0;
-    margin-left: 0;
-  }
-
-  .homenavcontent .sep3 {
-    position: absolute;
-    float: none;
-    top: 5px;
-    left: 84.5238095238%;
-    margin-top: 0;
-    margin-left: 0;
-  }
-
-  .homenavcontent .sep4 {
-    position: absolute;
-    float: none;
-    clear: none;
-    top: 58px;
-    left: 40.9877232142%;
-    margin-top: 0;
-    margin-left: 0;
-  }
-
-  .homenavcontent2 {
-    top: 107px;
-    right: 77.625%;
-    width: 144px;
-  }
-
-  .homenavcontent2 .domainsub {
-    top: 7px;
-    left: 30.5230034722%;
-  }
-
-  .contentheader .lirelogo,
-  .lirelogo {
-    left: 0;
-    right: 0;
-    height: auto;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .txtapi {
-    top: 273px;
-    left: 0;
-    right: 0;
-    width: 540px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .txtlearn {
-    top: 273px;
-    left: 0;
-    right: 0;
-    width: 527px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .txtmic {
-    top: 273px;
-    left: 0;
-    right: 0;
-    width: 541px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .txtspeak {
-    top: 273px;
-    left: 0;
-    right: 0;
-    width: 517px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .txttype {
-    top: 273px;
-    left: 0;
-    right: 0;
-    width: 526px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .content .anchors-1 {
-    margin-top: 79px;
-    margin-left: 8.74346%;
-  }
-
-  .content .anchors-2 {
-    margin-left: 0;
-  }
-
-  .content .anchors-3 {
-    margin-left: 9.99648%;
-  }
-
-  .content .anchors-4 {
-    margin-left: 7.95089%;
-  }
-
-  .content .anchors-5,
-  .content .anchors-6,
-  .content .anchors-7 {
-    margin-left: 8.74346%;
-  }
-
-  .content .element-1 {
-    z-index: 51;
-    margin-left: 20.37792%;
-  }
-
-  .content .element-2 {
-    z-index: 53;
-    margin-left: 20.31502%;
-  }
-
-  .content .element-3 {
-    z-index: 57;
-    margin-left: 20.31502%;
-  }
-
-  .content .sidedecor-1 {
-    z-index: 42;
-    margin-top: 113px;
-  }
-
-  .content .sidedecor-2 {
-    z-index: 45;
-    margin-top: 124px;
-  }
-
-  .content .text-10,
-  .content .text-6,
-  .content .text-8 {
-    width: 79.0282809983%;
-    margin-left: 9.99648%;
-  }
-
-  .content .text-11,
-  .content .text-5,
-  .content .text-7 {
-    width: 79.0282809983%;
-    margin-left: 7.34954%;
-  }
-
-  .content .text-13 {
-    width: 79.0282809983%;
-    margin-top: 141px;
-    margin-left: 7.34954%;
-  }
-
-  .content .text-12,
-  .content .text-14 {
-    width: 79.0282809983%;
-    margin-left: 8.74346%;
-  }
-
-  .content .text-15 {
-    position: relative;
-    z-index: 43;
-    width: 91.304347826%;
-    margin-top: 104px;
-    margin-left: 2.03553%;
-  }
-
-  .content .text-16 {
-    position: relative;
-    float: left;
-    z-index: 50;
-    width: 18.5185185185%;
-    height: 38px;
-    margin-right: 0;
-    margin-left: 2.25443%;
-  }
-
-  .content .text-17 {
-    clear: none;
-    margin-left: 21.99829%;
-  }
-
-  .content .text-18 {
-    margin-left: 22.05113%;
-  }
-
-  .content .text-19 {
-    position: relative;
-    float: left;
-    z-index: 52;
-    width: 20.7729468599%;
-    height: 38px;
-    margin-right: 0;
-    margin-left: 0.95864%;
-  }
-
-  .content .text-22 {
-    position: relative;
-    float: left;
-    z-index: 56;
-    width: 20.7729468599%;
-    height: 38px;
-    margin-right: 0;
-    margin-left: 0.95864%;
-  }
-
-  .content .text-20,
-  .content .text-23 {
-    clear: none;
-    margin-left: 22.20713%;
-  }
-
-  .content .text-21,
-  .content .text-24 {
-    margin-left: 22.20713%;
-  }
-
-  .content .text-3 {
-    position: relative;
-    clear: both;
-    z-index: 24;
-    width: 92.7536231884%;
-    margin-top: -76px;
-    margin-left: 7.8905%;
-  }
-
-  .content .text-4 {
-    width: 79.0282809983%;
-    margin-top: 40px;
-    margin-left: 19.99799%;
-  }
-
-  .content .text-9 {
-    width: 79.0282809983%;
-    margin-top: 130px;
-    margin-left: 7.34954%;
-  }
-
-  .homenavcontent ._button-10 {
-    top: 52px;
-    left: 47.0145089285%;
-  }
-
-  .homenavcontent ._button-6 {
-    left: 88.0952380952%;
-  }
-
-  .homenavcontent ._button-7 {
-    left: 5.9523809523%;
-  }
-
-  .homenavcontent ._button-8 {
-    left: -63.0952380953%;
-  }
-
-  .homenavcontent ._button-9 {
-    top: 52px;
-    left: -15.4761904762%;
-  }
-
-  .homenavcontent2 ._button-1 {
-    left: 40.7092065868%;
-  }
-
-  .homenavcontent2 ._button-2 {
-    left: 30.5295658682%;
-  }
-
-  .homenavcontent2 ._button-3 {
-    left: 26.936751497%;
-  }
-
-  .homenavcontent2 ._button-4 {
-    left: 49.0924401197%;
-  }
-}
-
-@media(max-width: 620px) {
+@media(max-width: 700px) {
   body {
     font-size: 1em;
   }
 
   .background,
-  .homeicocontent,
   .homenavcontent,
   .txtapi,
   .txtlearn,
@@ -1386,9 +1073,7 @@ body {
   }
 
   .content {
-    left: 22.4193548387%;
-    width: 77.5806451612%;
-    height: 4825px;
+    width: 81.65%;
   }
 
   .content .element {
@@ -1401,14 +1086,16 @@ body {
 
   .contentheader .text {
     position: relative;
-    z-index: 60;
-    margin-left: 0.74024%;
+    z-index: 64;
+    margin-left: 0.73652%;
   }
 
-  .domainsub .text {
-    top: 0;
-    left: 3.5027973729%;
-    height: 272px;
+  .homeicocontent {
+    left: 0;
+    right: 0;
+    width: 14.1428571428%;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .homeicocontent .icoapi,
@@ -1419,13 +1106,33 @@ body {
     height: auto;
   }
 
-  .homenavcontent2 {
-    right: 77.6234879032%;
+  .homenavcontent .sep1 {
+    position: relative;
+    z-index: 7;
+    margin-top: 9px;
+    margin-left: 1.17188%;
   }
 
-  .homenavcontent2 .domainsub {
-    left: 24.5659722222%;
-    height: 254px;
+  .homenavcontent .sep2 {
+    position: relative;
+    z-index: 8;
+    margin-top: 9px;
+    margin-left: 79.6875%;
+  }
+
+  .homenavcontent .sep3 {
+    visibility: hidden;
+    position: relative;
+    z-index: 9;
+    margin-top: 9px;
+    margin-left: 15.46689%;
+  }
+
+  .homenavcontent .sep4 {
+    position: relative;
+    z-index: 10;
+    margin-top: 15px;
+    margin-left: 42.80134%;
   }
 
   .contentheader .lirelogo,
@@ -1437,31 +1144,33 @@ body {
     margin-left: auto;
   }
 
-  .content .anchors-4 {
-    margin-left: 7.94569%;
+  .content .anchors-2 {
+    margin-left: 12.91178%;
   }
 
-  .content .anchors-1,
-  .content .anchors-5,
-  .content .anchors-6,
-  .content .anchors-7,
-  .content .text-12 {
-    margin-left: 8.73831%;
+  .content .anchors-4,
+  .content .anchors-7 {
+    margin-left: 7.94445%;
   }
 
   .content .element-1 {
     z-index: 51;
-    margin-left: 13.08797%;
+    margin-left: 5.52503%;
   }
 
   .content .element-2 {
     z-index: 53;
-    margin-left: 13.50377%;
+    margin-left: 5.43208%;
   }
 
   .content .element-3 {
     z-index: 57;
-    margin-left: 13.48753%;
+    margin-left: 5.47582%;
+  }
+
+  .content .element-4 {
+    z-index: 61;
+    margin-left: 5.31726%;
   }
 
   .content .sidedecor-1 {
@@ -1476,7 +1185,7 @@ body {
   .content .text-10,
   .content .text-6,
   .content .text-8 {
-    margin-left: 9.98896%;
+    margin-left: 9.99481%;
   }
 
   .content .text-11,
@@ -1484,58 +1193,109 @@ body {
   .content .text-5,
   .content .text-7,
   .content .text-9 {
-    margin-left: 7.34148%;
+    margin-left: 7.33481%;
   }
 
+  .content .anchors-1,
+  .content .anchors-5,
+  .content .anchors-6,
+  .content .text-12,
   .content .text-14 {
-    width: 88.3575883575%;
-    margin-left: 8.73181%;
+    margin-left: 8.73999%;
   }
 
   .content .text-15 {
     position: relative;
     z-index: 43;
-    margin-left: 2.03028%;
+    margin-left: 0.68892%;
   }
 
   .content .text-16 {
     position: relative;
+    float: left;
     z-index: 50;
-    width: 35.9667359667%;
-    margin-left: 15.38462%;
+    margin-right: 0;
+    margin-left: 9.78157%;
+  }
+
+  .content .text-18 {
+    width: 85%;
+    margin-left: 7.54805%;
   }
 
   .content .text-19 {
     position: relative;
+    float: left;
     z-index: 52;
-    width: 31.6008316008%;
-    margin-left: 16.63202%;
+    margin-right: 0;
+    margin-left: 8.43107%;
   }
 
   .content .text-22 {
     position: relative;
+    float: left;
     z-index: 56;
-    width: 31.6008316008%;
-    margin-left: 16.62877%;
+    margin-right: 0;
+    margin-left: 8.4256%;
+  }
+
+  .content .text-25 {
+    position: relative;
+    float: left;
+    z-index: 60;
+    width: 150px;
+    margin-right: 0;
+    margin-left: 7.54805%;
   }
 
   .content .text-17,
-  .content .text-18,
   .content .text-20,
-  .content .text-21,
   .content .text-23,
-  .content .text-24 {
-    margin-left: 15.38462%;
+  .content .text-26 {
+    clear: none;
+    margin-left: 7.4633%;
+  }
+
+  .content .text-21,
+  .content .text-24,
+  .content .text-27 {
+    width: 85%;
+    margin-left: 7.4633%;
   }
 
   .content .text-3 {
     position: relative;
     z-index: 24;
-    margin-left: 7.88397%;
+    margin-left: 1.27669%;
   }
 
   .content .text-4 {
-    margin-left: 19.9974%;
+    margin-left: 19.99508%;
+  }
+
+  .homenavcontent ._button-10 {
+    top: 59px;
+    left: 47.6097470238%;
+  }
+
+  .homenavcontent ._button-6 {
+    top: 4px;
+    left: 89.2857142857%;
+  }
+
+  .homenavcontent ._button-7 {
+    top: 4px;
+    left: 7.1428571428%;
+  }
+
+  .homenavcontent ._button-8 {
+    top: 4px;
+    left: -61.9047619048%;
+  }
+
+  .homenavcontent ._button-9 {
+    top: 59px;
+    left: -13.6904761905%;
   }
 }
 
@@ -1544,7 +1304,8 @@ body {
     font-size: 1em;
   }
 
-  .background {
+  .background,
+  .homeicocontent {
     left: 0;
     right: 0;
     margin-right: auto;
@@ -1554,15 +1315,10 @@ body {
   .content {
     left: 0;
     width: 100%;
-    height: 5196px;
-  }
-
-  .content .anchors {
-    width: 61.34375%;
+    height: 6593px;
   }
 
   .content .element {
-    display: none;
     position: relative;
   }
 
@@ -1578,271 +1334,292 @@ body {
   .contentheader .lirelogo {
     top: 7px;
     left: auto;
-    right: 7.625%;
+    right: 1.875%;
     height: auto;
   }
 
   .contentheader .text {
     position: relative;
-    z-index: 60;
-    width: 65.75%;
+    z-index: 64;
+    width: 74.25%;
     margin-left: 0.75%;
   }
 
-  .domainsub .text {
-    top: -10px;
-    left: -1.5446363416%;
-  }
-
-  .homeicocontent {
-    top: 446px;
-    left: 0;
-    right: 0;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
   .homeicocontent .icoapi {
-    top: 129px;
-    left: 182%;
+    top: 63px;
+    left: 284.08839779%;
     height: auto;
   }
 
   .homeicocontent .icolearn {
-    top: 66px;
-    left: 182%;
+    top: -17px;
+    left: 284.08839779%;
     height: auto;
   }
 
   .homeicocontent .icomic {
-    top: -126px;
-    left: 182%;
+    top: -257px;
+    left: 285.8839779005%;
     height: auto;
   }
 
   .homeicocontent .icospeak {
-    top: 2px;
-    left: 182%;
+    top: -97px;
+    left: 285.8839779005%;
     height: auto;
   }
 
   .homeicocontent .icotype {
-    top: -62px;
-    left: 182%;
+    top: -177px;
+    left: 285.8839779005%;
     height: auto;
   }
 
   .homenavcontent {
-    top: 518px;
+    top: 228px;
     left: 0;
     right: 0;
     margin-right: auto;
     margin-left: auto;
   }
 
-  .homenavcontent .sep1,
-  .homenavcontent .sep2,
-  .homenavcontent .sep3,
+  .homenavcontent .sep1 {
+    visibility: hidden;
+    position: relative;
+    z-index: 7;
+  }
+
+  .homenavcontent .sep2 {
+    visibility: hidden;
+    position: relative;
+    z-index: 8;
+  }
+
+  .homenavcontent .sep3 {
+    position: relative;
+    z-index: 9;
+  }
+
   .homenavcontent .sep4 {
     visibility: hidden;
+    position: relative;
+    z-index: 10;
   }
 
   .homenavcontent2 {
     visibility: hidden;
-    top: 108px;
-    left: 0;
-    right: auto;
-  }
-
-  .homenavcontent2 .domainsub {
-    top: 17px;
-    left: 14.9513473053%;
   }
 
   .lirelogo {
+    top: 104px;
     left: 0;
     right: 0;
+    width: 159px;
     height: auto;
   }
 
-  .txtapi,
-  .txtlearn,
-  .txtmic,
-  .txtspeak,
-  .txttype {
-    top: 262px;
-    left: 9%;
-    right: auto;
-    width: 325px;
+  .txtapi {
+    top: 358px;
+    left: 0;
+    right: 0;
+    width: 261px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
-  .content .anchors-1 {
-    margin-top: 0;
-    margin-left: 8.74219%;
+  .txtlearn {
+    top: 358px;
+    left: 0;
+    right: 0;
+    width: 212px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .txtmic {
+    top: 358px;
+    left: 0;
+    right: 0;
+    width: 259px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .txtspeak {
+    top: 358px;
+    left: 0;
+    right: 0;
+    width: 222px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .txttype {
+    top: 358px;
+    left: 0;
+    right: 0;
+    width: 244px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .homenavcontent ._button {
+    left: -61.3095238096%;
   }
 
   .content .anchors-2 {
     margin-top: 22px;
+    margin-left: 12.91016%;
   }
 
-  .content .anchors-4 {
-    margin-left: -19.04297%;
+  .content .anchors-3 {
+    margin-left: 9.99219%;
   }
 
-  .content .anchors-3,
-  .content .anchors-5 {
-    margin-left: 0;
-  }
-
-  .content .anchors-6 {
-    margin-left: 7.75%;
-  }
-
+  .content .anchors-4,
   .content .anchors-7 {
-    margin-left: 2.65625%;
+    margin-left: 7.94141%;
   }
 
   .content .element-1 {
     z-index: 51;
-    margin-top: 443px;
-    margin-left: 23.37891%;
+    margin-left: 5.52344%;
   }
 
   .content .element-2 {
     z-index: 53;
-    margin-top: -636px;
-    margin-left: 1.25%;
+    margin-left: 5.42969%;
   }
 
   .content .element-3 {
     z-index: 57;
-    margin-top: -542px;
-    margin-left: 55.13672%;
+    margin-left: 5.47266%;
+  }
+
+  .content .element-4 {
+    z-index: 61;
+    margin-left: 5.31641%;
   }
 
   .content .sidedecor-1 {
     z-index: 42;
-    margin-top: 192px;
+    width: 9.75%;
+    margin-top: 106px;
   }
 
   .content .sidedecor-2 {
     z-index: 45;
-    margin-top: 151px;
+    width: 13%;
+    margin-top: 65px;
   }
 
-  .content .text-10 {
-    width: 61.34375%;
+  .content .text-10,
+  .content .text-6,
+  .content .text-8 {
+    margin-top: 69px;
     margin-left: 9.99219%;
   }
 
   .content .text-11 {
-    width: 61.34375%;
-    margin-top: 92px;
-    margin-left: 7.34766%;
+    width: 83.25%;
+    margin-left: 7.25%;
   }
 
   .content .text-12 {
-    width: 86.25%;
-    margin-left: 8.75%;
+    margin-top: 69px;
+    margin-left: 8.74219%;
   }
 
-  .content .text-13,
-  .content .text-5 {
-    width: 61.34375%;
-    margin-top: 130px;
-    margin-left: 7.34766%;
+  .content .text-13 {
+    width: 84.5%;
+    margin-left: 7.25%;
   }
 
+  .content .anchors-1,
+  .content .anchors-5,
+  .content .anchors-6,
   .content .text-14 {
-    width: 93.75%;
-    margin-left: 4%;
+    margin-left: 8.74219%;
   }
 
   .content .text-15 {
     position: relative;
+    clear: both;
     z-index: 43;
-    width: 92.25%;
-    margin-top: 130px;
-    margin-left: 1%;
+    width: 100%;
+    margin-top: 7px;
+    margin-left: 0;
   }
 
   .content .text-16 {
-    display: none;
     position: relative;
     z-index: 50;
-    width: 40.78125%;
-    margin-top: -63px;
-    margin-left: 26.70313%;
+    margin-left: 9.78125%;
   }
 
-  .content .text-17 {
-    clear: both;
-    width: 61.34375%;
-    margin-top: 39px;
-    margin-left: 5%;
+  .content .text-18 {
+    margin-left: 7.55469%;
   }
 
   .content .text-19 {
-    display: none;
     position: relative;
     z-index: 52;
-    width: 40.78125%;
-    margin-top: -674px;
-    margin-left: -143.36328%;
+    margin-left: 8.42969%;
   }
 
   .content .text-22 {
-    display: none;
     position: relative;
     z-index: 56;
-    width: 40.78125%;
-    margin-top: -567px;
-    margin-left: 18.25%;
+    margin-left: 8.42188%;
   }
 
-  .content .text-20,
   .content .text-23 {
-    clear: both;
-    width: 87.75%;
-    margin-left: 5%;
+    width: 85.75%;
+    margin-left: 7.5%;
   }
 
-  .content .text-18,
+  .content .text-25 {
+    position: relative;
+    z-index: 60;
+    margin-left: 7.55469%;
+  }
+
+  .content .text-17,
+  .content .text-20,
+  .content .text-26 {
+    width: 85%;
+    margin-left: 7.5%;
+  }
+
   .content .text-21,
-  .content .text-24 {
-    width: 87.75%;
-    margin-left: 5%;
+  .content .text-24,
+  .content .text-27 {
+    margin-left: 7.46094%;
   }
 
   .content .text-3 {
     position: relative;
-    clear: none;
+    clear: both;
     z-index: 24;
-    width: 89.75%;
-    margin-top: 174px;
-    margin-left: 1.34375%;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 0;
   }
 
   .content .text-4 {
-    width: 85.75%;
-    margin-top: 59px;
-    margin-left: 6.75%;
+    width: 84.75%;
+    margin-left: 11.75%;
   }
 
-  .content .text-6 {
-    width: 80.25%;
-    margin-left: 10%;
-  }
-
-  .content .text-8 {
-    width: 76.5%;
-    margin-left: 10%;
+  .content .text-5 {
+    width: 86%;
+    margin-left: 7.25%;
   }
 
   .content .text-7,
   .content .text-9 {
-    width: 61.34375%;
-    margin-left: 7.34766%;
+    width: 85.75%;
+    margin-left: 7.25%;
   }
 
   .lirelogo-2 {
@@ -1851,27 +1628,22 @@ body {
   }
 
   .homenavcontent ._button-10 {
-    top: 37px;
-    left: -14.2857142858%;
+    top: 71px;
   }
 
   .homenavcontent ._button-6 {
-    top: -67px;
-    left: -25%;
+    top: -54px;
   }
 
   .homenavcontent ._button-7 {
-    top: -119px;
-    left: -22.6190476191%;
+    top: -116px;
   }
 
   .homenavcontent ._button-8 {
-    top: -171px;
-    left: -11.3095238096%;
+    top: -179px;
   }
 
   .homenavcontent ._button-9 {
-    top: -15px;
-    left: -2.9761904762%;
+    top: 9px;
   }
 }
