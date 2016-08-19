@@ -552,7 +552,7 @@ body {
   display: block;
   position: relative;
   float: left;
-  width: 300px;
+  margin-left: 6.66004%;
   padding-right: 10px;
   padding-left: 10px;
   border-top-width: 30px;
@@ -1418,10 +1418,10 @@ body {
   float: left;
   clear: both;
   z-index: 131;
-  width: 24.6520874751%;
+  width: 35.6858846918%;
   min-height: 30px;
   margin-top: -79px;
-  margin-left: 20.43365%;
+  margin-left: 7.35276%;
   font-size: 1.25em;
   color: rgb(0, 73, 119);
 }
@@ -1431,10 +1431,10 @@ body {
   float: left;
   clear: both;
   z-index: 133;
-  width: 24.6520874751%;
+  width: 35.6858846918%;
   min-height: 30px;
   margin-top: -79px;
-  margin-left: 20.43365%;
+  margin-left: 7.35276%;
   font-size: 1.25em;
   color: rgb(0, 73, 119);
 }
@@ -1444,10 +1444,10 @@ body {
   float: left;
   clear: both;
   z-index: 135;
-  width: 24.6520874751%;
+  width: 35.6858846918%;
   min-height: 30px;
   margin-top: -155px;
-  margin-left: 20.43365%;
+  margin-left: 7.35276%;
   font-size: 1.25em;
   color: rgb(0, 73, 119);
 }
@@ -1494,13 +1494,11 @@ body {
 }
 
 .content ._button-18 {
-  position: relative;
   float: left;
-  z-index: 136;
-  width: 15.3267892644%;
+  width: 154px;
   height: 36px;
-  margin-top: -78px;
-  margin-left: 54.17495%;
+  margin-top: 20px;
+  margin-left: 34.47285%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -1534,9 +1532,9 @@ body {
 .content ._input-1 {
   clear: both;
   z-index: 130;
+  width: 355px;
   height: 79px;
   margin-top: 41px;
-  margin-left: 19.98012%;
 }
 
 .content ._input-1:hover {
@@ -1545,16 +1543,16 @@ body {
 
 .content ._input-2 {
   z-index: 132;
+  width: 355px;
   height: 79px;
   margin-top: 20px;
-  margin-left: 19.99876%;
 }
 
 .content ._input-3 {
   z-index: 134;
+  width: 434px;
   height: 155px;
   margin-top: 20px;
-  margin-left: 19.99876%;
 }
 
 .faceinfo ._button-10 {
@@ -1877,6 +1875,7 @@ body {
   .content {
     left: 15%;
     width: 85%;
+    height: 12625px;
   }
 
   .content .element {
@@ -1924,22 +1923,30 @@ body {
   }
 
   .homenavcontent .sep1 {
+    position: relative;
+    z-index: 7;
     margin-top: 9px;
     margin-left: 1.17188%;
   }
 
   .homenavcontent .sep2 {
+    position: relative;
+    z-index: 8;
     margin-top: 9px;
     margin-left: 79.6875%;
   }
 
   .homenavcontent .sep3 {
     visibility: hidden;
+    position: relative;
+    z-index: 9;
     margin-top: 9px;
     margin-left: 15.46689%;
   }
 
   .homenavcontent .sep4 {
+    position: relative;
+    z-index: 10;
     margin-top: 15px;
     margin-left: 42.80134%;
   }
@@ -2343,8 +2350,6 @@ body {
   }
 
   .content ._button-18 {
-    position: relative;
-    z-index: 136;
     width: 23.8655462184%;
     margin-top: 12px;
     margin-left: 70.75893%;
@@ -2419,7 +2424,7 @@ body {
   .content {
     left: 0;
     width: 100%;
-    height: 12215px;
+    height: 14598px;
   }
 
   .content .element {
@@ -2508,20 +2513,34 @@ body {
     height: 79px;
   }
 
+  .homenavcontent .sep1 {
+    visibility: hidden;
+    position: relative;
+    z-index: 7;
+  }
+
+  .homenavcontent .sep2 {
+    visibility: hidden;
+    position: relative;
+    z-index: 8;
+  }
+
   .homenavcontent .sep3 {
+    position: relative;
     clear: both;
+    z-index: 9;
     margin-left: 15.45473%;
   }
 
   .homenavcontent .sep4 {
     visibility: hidden;
+    position: relative;
     clear: none;
+    z-index: 10;
     margin-top: 64px;
     margin-left: 26.04167%;
   }
 
-  .homenavcontent .sep1,
-  .homenavcontent .sep2,
   .homenavcontent2 {
     visibility: hidden;
   }
@@ -2999,12 +3018,9 @@ body {
   }
 
   .content ._button-18 {
-    position: relative;
-    clear: both;
-    z-index: 136;
     width: 39%;
-    margin-top: -98px;
-    margin-left: 237.17188%;
+    margin-top: 20px;
+    margin-left: 57.5%;
   }
 
   .content ._input-1 {
