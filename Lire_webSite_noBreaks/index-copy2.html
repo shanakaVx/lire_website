@@ -5,8 +5,7 @@
   <meta name="viewport" content="initial-scale=1.0">
   <title>index-copy2</title>
   <link rel="stylesheet" href="css/standardize.css">
-  <link rel="stylesheet" href="css/index-copy2-grid.css">
-  <link rel="stylesheet" href="css/index-copy2.css">
+  <link rel="stylesheet" href="css/styles.css">
   <title></title>
 </head>
 <body class="body page-index-copy2 clearfix">
@@ -55,22 +54,25 @@
 </div>
     <p id="litAnchor" class="anchors anchors-3 js-lit-anchor"></p>
     <p id="features" class="subtopic text text-7 js-features">Litreature survey</p>
-    <div class="text text-8">
-      <p>Lire is an effective voice synthesizer framework 
-</p>
-      <p>Lire is based on Sinhala language, which contains the phonetics for Sinhala and Extended Phonetic Alphabet. 
-</p>
-      <p>Editable speech timeline 
-</p>
-      <p>Editable text to speech rules and prosodies. 
-</p>
-      <p>User’s own voice can be fed into the system to generate voice from the text.
-</p>
-      <p>API where all the Lire services are exposed</p>
-</div>
+    <p class="text text-8">The research works of Wasala and Gamage (2007) [1] has a set of Sinhala part of speech only to be used in Sinhala Text to Speech Systems.
+Festival framework used to develop text to speech systems[2] supports different languages, but it is language specific. The proposed system 'Lire' can be used to speak several languages due to the complete set of parts of speech
+Adoptable dashboard as a special learning tool for Sinhala language. 
+Dashboard is composed of clickable and playable set of tones. [3]
+The Sinhala IPA developed in the works of Wasala &amp; Gamage (2007) [1] can be extended more inserting foreign vowels and allowing them to add up with Sinhala consonants to produce any tone that can be read by human.
+A tokenizer identify parts of words and identify parts of words and then convert them to a set of phonetics from the IPA. 
+The Grapheme-to-Phoneme Conversion rules in the work by Wasala et al. (2006) [4] are programmatically embedded in their system and cannot be edited in the program run time. But the new framework is to define a way so that the user can change and add more rules to the framework without re-programming it.
+Natural Language Processing module does tokenizing and identifies special text representations [5]
+In the work of Aida-Zade et al. (2013) [7] the NLP module identifies currencies in US dollars, Decimal numbers, ratios, roman numerals, alphanumeric, phone numbers, email addresses,  counts and simple mathematical expressions. 
+In the work of Weerasinghe et al. (2007) [8] most features are implemented but still lacks the ability of identifying mathematical expressions, currencies and roman numerals. Lire will have new NLP rules defined to identify these characters
+
+The storyboard timeline concept in developing the timeline as in Girgensohn et al. (2000) [8]. Although it is for video editing, it is decided to be used for the speech timeline.
+As seen in the work of Aida-Zade et al. (2013) [7] the prosodic features are not editable after the speech is generated. But from the new framework full control is given over to the user.
+The prosodic features has also been discussed in the works of Wasala, Gamage (2007) [1] where Sinhala language’s prosodic features are discussed in depth.
+In the works of Reshma, Chetna et al (2014) [9] it has been discussed prosodic analysis of speech and implementation of a TTS using Matlab as the technology. But the proposed framework will be using Java Beads library.</p>
     <p id="researchgapAnchor" class="anchors anchors-4 js-researchgap-anchor"></p>
     <p id="features" class="subtopic text text-9 js-features">Research gap</p>
-    <p class="text text-10">table--researchgap--</p>
+    <p class="text text-10">Tone based voice synthesizer framework that is developed in this project will look through some untouched features that can be added to a tone based framework. Without just being confined to a text to speech system, the proposed approach is to develop a framework which consists of more features. 
+Based on the literature review carried out, we have identified certain areas in the text to speech domain that can be improved. For example, developing an extended IPA, new NLP tokenizing rules, speech editable timeline can be mentioned as the new features in this proposed framework</p>
     <p id="problemAnchor" class="anchors anchors-5 js-problem-anchor"></p>
     <p id="features" class="subtopic text text-11 js-features">Research problem</p>
     <div class="text text-12">
@@ -89,17 +91,15 @@
     <p id="objectiveAnchor" class="anchors anchors-6 js-objective-anchor"></p>
     <p id="features" class="subtopic text text-13 js-features">Objectives</p>
     <div class="text text-14">
-      <p>Lire is an effective voice synthesizer framework 
+      <p><strong>General objectives</strong></p>
+      <p>To bould a tone based voice synthesizer framework using Sinhala tones, which can be further enhanced to use in other languages as well
 </p>
-      <p>Lire is based on Sinhala language, which contains the phonetics for Sinhala and Extended Phonetic Alphabet. 
-</p>
-      <p>Editable speech timeline 
-</p>
-      <p>Editable text to speech rules and prosodies. 
-</p>
-      <p>User’s own voice can be fed into the system to generate voice from the text.
-</p>
-      <p>API where all the Lire services are exposed</p>
+      <p>To build the framework in a way it is usable for both general users and developer<br></p>
+      <p><strong>Specific objectives</strong><br></p>
+      <p>Develop a dashboard that contains all the parts of speech, the tones of each individual letter  (phonetics and diphones) so that a user can drag and drop the parts of speech into a timeline, make a speech and listen or download it<br></p>
+      <p>Design a timeline which enables user to edit the speech and download the speech output in the form of a WAV file. The speech output from the text to speech component is displayed in the fully editable timeline<br></p>
+      <p>Develop a text tokenizer with a NLP module to identify text styles like characters, numbers, currencies etc and provide the relevant phonetic equivalent of it. Text tokenizer rules will be customizable by the user and therefore users can add their own rules into the tokenizer so that it could tokenize any other language that the user prefers.<br></p>
+      <p>Provide an API for the tone based voice synthesizing framework, API is developed as the main security and the broker for all the internal system calls which are done and as well as develop the API as the gateway to the programmers to access the new framework.<br></p>
 </div>
     <p id="milestonesAnchor" class="anchors anchors-7 js-milestones-anchor"></p>
     <div id="sidedecor" class="bullet sidedecor sidedecor-2 js-sidedecor"></div>
@@ -192,58 +192,138 @@
     <p id="features" class="topic text text-34 js-features">Documents</p>
     <p class="caption text text-35">Click any of the links below to open a document</p>
     <p class="subtopic text text-36">Documents and text</p>
-    <p class="doclink text text-37">Project proposal document (Jan 2nd)</p>
-    <div class="doclink text text-38">
-      <p>SRS: Dashboard and Learning aid</p>
-      <p>by: Hingalagoda S. U. K.</p>
+    <div class="doclink text text-37">
+      <p>Project Charter document (Jan 2nd)</p>
+      <p>Project Proposal document</p>
 </div>
+    <p class="doclink text text-38"><strong>Software Requirements Specificaiton Documents</strong></p>
     <div class="doclink text text-39">
-      <p>SRS: Tokenizer and NLP module</p>
-      <p>by: Caldera H. S. U.</p>
+      <p>Tokenizer and NLP module (Caldera H. S. U.)</p>
+      <p>Timeline and Prosody module (Kumburegama C. L.)</p>
+      <p>Dashboard and Learning aid module (Hingalagoda S. U. K.)</p>
+      <p>Voice recording and API module (Kodithuwakku D. S. A. W.)</p>
 </div>
     <div class="doclink text text-40">
-      <p>SRS: Timeline and Prosodies module</p>
-      <p>by: Kumburegama C. L.</p>
+      <p><strong>Project Status documents</strong></p>
+      <p>Tokenizer and NLP module (Caldera H. S. U.)
+&nbsp;</p>
+      <p>Timeline and Prosody module (Kumburegama C. L.)
+&nbsp;</p>
+      <p>Dashboard and Learning aid module (Hingalagoda S. U. K.)
+&nbsp;</p>
+      <p>Voice recording and API module (Kodithuwakku D. S. A. W.)<br></p>
 </div>
     <div class="doclink text text-41">
-      <p>SRS: Voice recording and API module</p>
-      <p>by: Kodithuwakku D. S. A. W.</p>
+      <p><strong>Final trial documents</strong></p>
+      <p>Tokenizer and NLP module (Caldera H. S. U.)
+&nbsp;</p>
+      <p>Timeline and Prosody module (Kumburegama C. L.)
+&nbsp;</p>
+      <p>Dashboard and Learning aid module (Hingalagoda S. U. K.)
+&nbsp;</p>
+      <p>Voice recording and API module (Kodithuwakku D. S. A. W.)<br></p>
 </div>
-    <div class="doclink text text-42">
-      <p>Thesis: Dashboard and Learning aid SRS</p>
-      <p>by: Hingalagoda S. U. K.</p>
+    <div class="text text-42">
+      <p><strong>Final documents</strong></p>
+      <p>Tokenizer and NLP module (Caldera H. S. U.)
+&nbsp;</p>
+      <p>Timeline and Prosody module (Kumburegama C. L.)
+&nbsp;</p>
+      <p>Dashboard and Learning aid module (Hingalagoda S. U. K.)
+&nbsp;</p>
+      <p>Voice recording and API module (Kodithuwakku D. S. A. W.)<br></p>
 </div>
-    <div class="doclink text text-43">
-      <p>Thesis: Tokenizer and NLP module SRS</p>
-      <p>by: Caldera H. S. U.</p>
+    <div class="text text-43">
+      <p><strong>Final project status documents</strong></p>
+      <p>Tokenizer and NLP module (Caldera H. S. U.)
+&nbsp;</p>
+      <p>Timeline and Prosody module (Kumburegama C. L.)
+&nbsp;</p>
+      <p>Dashboard and Learning aid module (Hingalagoda S. U. K.)
+&nbsp;</p>
+      <p>Voice recording and API module (Kodithuwakku D. S. A. W.)<br></p>
 </div>
-    <div class="doclink text text-44">
-      <p>Thesis: Timeline and Prosodies module SRS</p>
-      <p>by: Kumburegama C. L.</p>
-</div>
+    <p class="subtopic text text-44">Presentations and videos</p>
     <div class="doclink text text-45">
-      <p>Thesis: Voice recording and API module SRS</p>
-      <p>by: Kodithuwakku D. S. A. W.</p>
+      <p>Proposal presentation</p>
+      <p>Prototype presentation</p>
+      <p>SRS presentation</p>
+      <p>Final trial presentation</p>
+      <p>Final presentation</p>
 </div>
-    <p class="subtopic text text-46">Presentations and videos</p>
-    <p class="doclink text text-47">Proposal presentation</p>
-    <p class="doclink text text-48">Prototype presentation</p>
-    <p class="doclink text text-49">SRS presentation</p>
-    <p class="doclink text text-50">Mid review presentation</p>
+    <p class="doclink text text-46">placeholder1</p>
+    <p class="doclink text text-47">placeholder2</p>
+    <p class="doclink text text-48">placeholder3</p>
     <p id="documentsAnchor" class="anchors anchors-9 js-documents-anchor"></p>
     <div id="sidedecor" class="bullet sidedecor sidedecor-4 js-sidedecor"></div>
-    <p class="topic text text-51">About the researchers</p>
-    <div id="profile" class="profile clearfix js-profile">
-      <div id="faceInfo" class="faceinfo clearfix js-face-info">
-        <p class="profilename profilename-1">Shanaka Caldera</p>
-        <div class="profilename profilename-2">
+    <p class="topic text text-49">About Us</p>
+    <p class="text text-50">Our Team</p>
+    <div id="profile" class="profile profile-1 js-profile">
+      <div id="face" class="face face-1 js-face"></div>
+      <p class="text text-51">Developing the Natural language processing module for Sinhala language. Building the Sinhala tokenizer from Apache Open NLP to identify words and convert them into the tones. Tokenizer is then hosted as a service so any person can make use of it</p>
+      <div id="faceInfo" class="faceinfo faceinfo-1 js-face-info">
+        <button class="_button _button-6"></button>
+        <button class="_button _button-7"></button>
+        <button id="fb" class="_button _button-8 js-fb"></button>
+        <div class="profilename profilename-1">
           <p>Group leader</p>
           <p><a href="mailto:shanaka.vx@gmail.com?Subject=Requesting_Lire_info">shanaka.vx@gmail.com</a></p>
 </div>
-        <button class="_button"></button>
+        <p class="profilename profilename-2">Shanaka Caldera</p>
       </div>
-      <div id="face" class="face js-face"></div>
     </div>
+    <div id="profile" class="profile profile-2 js-profile">
+      <div id="face" class="face face-2 js-face"></div>
+      <p class="text text-52">Developing the Timeline and prosody module. Timeline shows the generated speech and user can edit it. The prosody module, which is developed using java Beads library, identifies the basic pitch and timing differences in the sentences and it is also editable</p>
+      <div id="faceInfo" class="faceinfo faceinfo-2 js-face-info">
+        <button class="_button _button-9"></button>
+        <button class="_button _button-10"></button>
+        <button id="fb" class="_button _button-11 js-fb"></button>
+        <div class="profilename profilename-3">
+          <p>Member</p>
+          <p><a href="mailto:shanaka.vx@gmail.com?Subject=Requesting_Lire_info">chamindrakg@gmail.com</a></p>
+</div>
+        <p class="profilename profilename-4">Chamindra Kumburegama</p>
+      </div>
+    </div>
+    <div id="profile" class="profile profile-3 js-profile">
+      <div id="face" class="face face-3 js-face"></div>
+      <p class="text text-53">Developing the Dashboard&nbsp;Developing the Dashboard Developing the Dashboard Developing the Dashboard Developing the Dashboard Developing the Dashboard Developing the Dashboard Developing the Dashboard </p>
+      <div id="faceInfo" class="faceinfo faceinfo-3 js-face-info">
+        <button class="_button _button-12"></button>
+        <button class="_button _button-13"></button>
+        <button id="fb" class="_button _button-14 js-fb"></button>
+        <div class="profilename profilename-5">
+          <p>Member</p>
+          <p><a href="mailto:shanaka.vx@gmail.com?Subject=Requesting_Lire_info">chamindrakg@gmail.com</a></p>
+</div>
+        <p class="profilename profilename-6">Shamilka Hingalagoda</p>
+      </div>
+    </div>
+    <div id="profile" class="profile profile-4 js-profile">
+      <div id="face" class="face face-4 js-face"></div>
+      <p class="text text-54">Developing the API and record&nbsp;Developing the API and record Developing the API and record Developing the API and record Developing the API and record Developing the API and record Developing the API and record Developing the API and record Developing the API and record </p>
+      <div id="faceInfo" class="faceinfo faceinfo-4 js-face-info">
+        <button class="_button _button-15"></button>
+        <button class="_button _button-16"></button>
+        <button id="fb" class="_button _button-17 js-fb"></button>
+        <div class="profilename profilename-7">
+          <p>Member</p>
+          <p><a href="mailto:shanaka.vx@gmail.com?Subject=Requesting_Lire_info">chamindrakg@gmail.com</a></p>
+</div>
+        <p class="profilename profilename-8">Shehan Kodithuwakku</p>
+      </div>
+    </div>
+    <p id="documentsAnchor" class="anchors anchors-10 js-documents-anchor"></p>
+    <div id="sidedecor" class="bullet sidedecor sidedecor-5 js-sidedecor"></div>
+    <p class="topic text text-55">Contacts</p>
+    <input id="txtcname" class="_input _input-1 js-txtcname" type="text">
+    <p class="text text-56">Your name</p>
+    <button class="_button _button-18">Send</button>
+    <input id="txtcname" class="_input _input-2 js-txtcname" type="email">
+    <p class="text text-57">Your email</p>
+    <input id="txtcname" class="_input _input-3 js-txtcname" type="text">
+    <p class="text text-58">Message to us</p>
   </div>
   <img id="lireLogo" class="logolg shadowas lirelogo lirelogo-2 js-lire-logo" src="images/Logo_white.svg">
   <p id="txtApi" class="txtapi js-txt-api">Use all the Lire's services through a REST API in your own applications</p>
@@ -259,15 +339,15 @@
     <img id="icoSpeak" class="icostyle icospeak js-ico-speak" src="images/speak.png">
   </div>
   <div id="homenavcontent" class="homenavcontent clearfix js-homenavcontent">
-    <button id="btnDocuments" class="logolg shadowas _button _button-7 js-btn-documents">Documents</button>
-    <button onClick="window.location='#milestonesAnchor';" id="btnMilestones" class="navhome _button _button-8 js-btn-milestones">Milestones</button>
-    <button id="btnDomain" class="navhome _button _button-9 js-btn-domain">Domain</button>
+    <button id="btnDocuments" class="logolg shadowas _button _button-19 js-btn-documents">Documents</button>
+    <button onClick="window.location='#milestonesAnchor';" id="btnMilestones" class="navhome _button _button-20 js-btn-milestones">Milestones</button>
+    <button id="btnDomain" class="navhome _button _button-21 js-btn-domain">Domain</button>
     <div class="logolg shadowas sep1"></div>
     <div class="logolg shadowas sep2"></div>
     <div class="logolg shadowas sep3"></div>
-    <button id="btnAbout" class="_button _button-10 js-btn-about">About</button>
+    <button id="btnAbout" class="_button _button-22 js-btn-about">About</button>
     <div class="logolg shadowas sep4"></div>
-    <button id="btnContacts" class="_button _button-11 js-btn-contacts">Contacts</button>
+    <button id="btnContacts" class="_button _button-23 js-btn-contacts">Contacts</button>
   </div>
   <div id="backgd" class="backgd js-backgd"></div>
   <div id="background" class="logolg shadowas background js-background"></div>

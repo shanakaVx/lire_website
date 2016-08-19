@@ -18,11 +18,13 @@
   var $txtLearn = $('.js-txt-learn');
   var $txtApi = $('.js-txt-api');
   var $lireLogo = $('.js-lire-logo');
-  var $face = $('.js-face');
-  var $faceInfo = $('.js-face-info');
-  var $profile = $('.js-profile');
+  var $txtcname = $('.js-txtcname');
   var $sidedecor = $('.js-sidedecor');
   var $documentsAnchor = $('.js-documents-anchor');
+  var $fb = $('.js-fb');
+  var $faceInfo = $('.js-face-info');
+  var $face = $('.js-face');
+  var $profile = $('.js-profile');
   var $features = $('.js-features');
   var $milestonesAnchor = $('.js-milestones-anchor');
   var $objectiveAnchor = $('.js-objective-anchor');
